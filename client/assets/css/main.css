@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    * {
+        outline: none;
+        transition: all ease-in-out 0.4s;
+    }
+    html {
+        font-family: 'roboto', sans-serif;
+        color: #fff;
+        box-sizing: border-box;
+        margin: 0;
+    }
+     ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #2f3946;
+    }
+     ::-webkit-scrollbar {
+        width: 6px;
+        background-color: #2f3946;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: #5d6875;
+    }
+}
+
+@layer components {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .topnav-active {
+        background-color: #010203 !important;
+        position: sticky !important;
+        transition: all 0.1s linear;
+    }
+    .drop-down-menu {
+        background-color: #060f19;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 180px;
+        max-width: 100%;
+        padding: 20px 20px;
+        opacity: 0;
+    }
+    .drop-down-menu li {
+        flex-basis: 180px;
+        padding: 5px 0;
+        color: #fff !important;
+    }
+    .drop-down-genres {
+        width: 940px;
+    }
+    .drop-down-country {
+        width: 180px;
+        font-weight: 600;
+    }
+    li.active ul {
+        display: flex;
+        opacity: 1;
+    }
+    li.active ul li:hover {
+        color: #f36522 !important;
+    }
+    .slideActive {
+        z-index: 5;
+        opacity: 1 !important;
+        transition: opacity 1s linear;
+    }
+    .after-cover::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .underline-ul::after {
+        content: "";
+        width: 33px;
+        height: 1.5px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
+    .line-height-child-li li {
+        line-height: 33px;
+    }
+    @screen lg {
+        .container {
+            width: 970px;
+        }
+    }
+    @screen xl {
+        .container {
+            width: 1170px;
+        }
+    }
+}

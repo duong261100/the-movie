@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <button
+      class="
+        bg-[#f36522]
+        px-[26px]
+        pb-[10px]
+        pt-[8px]
+        mt-1
+        font-semibold
+        rounded-full
+        text-base
+        hover:bg-[#fff] hover:text-[#333]
+      "
+    >
+      <slot></slot>
+    </button>
+  </div>
+</template>
