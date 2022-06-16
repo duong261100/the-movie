@@ -1,44 +1,41 @@
-import axios from 'axios';
-const url = 'http://localhost:5000/api/movie';
-
 export default class API {
-    static async getAllMovie() {
-        const res = await axios.get(url);
+    static async getAllMovie(axios) {
+        const res = await axios.get('/api/movie');
         return res.data;
     }
 
-    static async getNowPlayingMovie() {
-        const res = await axios.get(`${url}/now_playing`);
+    static async getNowPlayingMovie(axios) {
+        const res = await axios.get('/api/movie/now_playing');
         return res.data.results;
     }
 
-    static async getTopRateMovie() {
-        const res = await axios.get(`${url}/top-rate`);
+    static async getTopRateMovie(axios) {
+        const res = await axios.get('/api/movie/top-rate');
         return res.data;
     }
 
-    static async getLatestMovie() {
-        const res = await axios.get(`${url}/latest`);
+    static async getLatestMovie(axios) {
+        const res = await axios.get('/api/movie/latest');
         return res.data;
     }
 
-    static async getUpcomingMovie() {
-        const res = await axios.get(`${url}/upcoming`);
+    static async getUpcomingMovie(axios) {
+        const res = await axios.get('/api/movie/upcoming');
         return res.data;
     }
 
-    static async getMovieDetail(id) {
-        const res = await axios.get(`${url}/${id}`);
+    static async getMovieDetail(axios, id) {
+        const res = await axios.get(`/api/movie/${id}`);
         return res.data;
     }
 
-    static async getMoviesByLanguage(language) {
-        const res = await axios.get(`${url}/language/${language}`);
+    static async getMoviesByLanguage(axios, language) {
+        const res = await axios.get(`/api/movie/language/${language}`);
         return res.data;
     }
 
-    static async getMoviesByGenre(genre) {
-        const res = await axios.get(`${url}/genre/${genre}`);
+    static async getMoviesByGenre(axios, genre) {
+        const res = await axios.get(`/api/movie/genre/${genre}`);
         return res.data;
     }
 }

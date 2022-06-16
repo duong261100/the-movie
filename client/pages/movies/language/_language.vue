@@ -14,6 +14,7 @@ export default {
   },
   async fetch() {
     this.movies = await movieAPI.getMoviesByLanguage(
+      this.$axios,
       this.$route.params.language
     )
   },

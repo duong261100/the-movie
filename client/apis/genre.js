@@ -1,9 +1,6 @@
-import axios from 'axios';
-const url = 'http://localhost:5000/api/movie';
-
 export default class API {
-    static async getAllGenre() {
-        const res = await axios.get(`${url}/list`);
+    static async getAllGenre(axios) {
+        const res = await axios.get('/api/movie/list');
         return res.data;
     }
 }

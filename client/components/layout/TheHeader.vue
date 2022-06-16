@@ -135,7 +135,7 @@ export default {
     }
   },
   async fetch() {
-    const genres = await genreAPI.getAllGenre()
+    const genres = await genreAPI.getAllGenre(this.$axios)
     this.genresList = await genres.genres
   },
   beforeMount() {

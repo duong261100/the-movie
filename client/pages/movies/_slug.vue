@@ -41,7 +41,7 @@ export default {
     }
   },
   async fetch() {
-    this.movie = await movieAPI.getMovieDetail(this.$route.params.id)
+    this.movie = await movieAPI.getMovieDetail(this.$axios, this.$route.params.id)
   }
 }
 </script>

@@ -13,7 +13,7 @@ export default {
     }
   },
   async fetch() {
-    this.movies = await movieAPI.getLatestMovie()
+    this.movies = await movieAPI.getLatestMovie(this.$axios)
   },
 }
 </script>

@@ -14,6 +14,7 @@ export default {
   },
   async fetch() {
     this.movies = await movieAPI.getMoviesByGenre(
+      this.$axios,
       this.$route.params.genre
     )
   },

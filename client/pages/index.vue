@@ -24,10 +24,11 @@ export default {
     }
   },
   async fetch() {
-    this.nowPlayingMovie = await movieAPI.getNowPlayingMovie().then(res => res.slice(0, 2))
-    this.topRateMovie = await movieAPI.getTopRateMovie().then(res => res.slice(0, 10))
-    this.latestMovie = await movieAPI.getLatestMovie()
-    this.upcomingMovie = await movieAPI.getUpcomingMovie().then(res => res.slice(0, 10))
+    this.nowPlayingMovie = await movieAPI.getNowPlayingMovie(this.$axios).then(res => res.slice(0, 2))
+    const resa = await this.$axios.get('/api/movie/top-rate');
+    this.topRateMovie = await resa.data;
+    this.latestMovie = await movieAPI.getLatestMovie(this.$axios)
+    this.upcomingMovie = await movieAPI.getUpcomingMovie(this.$axios).then(res => res.slice(0, 10))
   }
 }
 </script>
