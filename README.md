@@ -6,7 +6,7 @@
 
 ## client
 
-# Build Setup
+### Build Setup
 
 ```bash
 # install dependencies
@@ -22,7 +22,7 @@ $ npm run start
 
 ## server
 
-# Build Setup
+### Build Setup
 
 ```bash
 # install dependencies
