@@ -12,6 +12,18 @@ export default {
       movies: [],
     }
   },
+  head() {
+    return {
+      title: 'Trailer',
+      meta: [
+        {
+          hid: 'Trailer',
+          name: 'Trailer',
+          content: 'Watch free movies online',
+        }
+      ],
+    }
+  },
   async fetch() {
     this.movies = await movieAPI.getUpcomingMovie(this.$axios)
   },

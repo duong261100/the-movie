@@ -3,8 +3,10 @@
     :to="path"
     tag="button"
     class="
-      w-[150px]
-      px-[26px]
+      w-[120px]
+      sm:w-[150px]
+      px-[16px]
+      sm:px-[26px]
       pb-[10px]
       pt-[8px]
       mt-1

@@ -24,19 +24,19 @@
         </a>
       </div>
       <div class="nav-container grow">
-        <ul class="flex justify-center font-semibold text-lg">
+        <ul class="flex justify-center font-semibold text-sm md:text-base xl:text-lg">
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="h-full px-4 py-3 cursor-pointer hover:text-main-color"
           >
             <a href="/">Home</a>
           </li>
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="hidden md:block h-full px-4 py-3 cursor-pointer hover:text-main-color"
           >
             <a href="/movies/new-movies">New Movies</a>
           </li>
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="hidden md:block h-full px-4 py-3 cursor-pointer hover:text-main-color"
             :class="{ active: genresHovering }"
             @mouseover="genresHovering = true"
             @mouseout="genresHovering = false"
@@ -52,7 +52,8 @@
           </li>
           <li
             class="
-              block
+              hidden
+              md:block
               h-full
               px-4
               py-3
@@ -99,17 +100,17 @@
             </ul>
           </li>
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="hidden md:block h-full px-4 py-3 cursor-pointer hover:text-main-color"
           >
             Series
           </li>
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="hidden md:block h-full px-4 py-3 cursor-pointer hover:text-main-color"
           >
             <a href="/movies/top-rate">Top rate</a>
           </li>
           <li
-            class="block h-full px-4 py-3 cursor-pointer hover:text-main-color"
+            class="hidden md:block h-full px-4 py-3 cursor-pointer hover:text-main-color"
           >
             <a href="/movies/trailer-movies">Trailer</a>
           </li>

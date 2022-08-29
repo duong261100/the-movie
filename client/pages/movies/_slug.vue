@@ -10,7 +10,7 @@
         <p class="text-[16px] my-[25px]">
           {{ movie.overview }}
         </p>
-        <div class="w-[800px] m-auto">
+        <div class="w-[80vw] lg:w-[800px] m-auto">
           <img
             :src="`https://image.tmdb.org/t/p/original${movie.backdrop_path}`"
             alt=""
@@ -38,6 +38,18 @@ export default {
   data() {
     return {
       movie: []
+    }
+  },
+  head() {
+    return {
+      title: this.movie.title,
+      meta: [
+        {
+          hid: 'Search',
+          name: 'Search',
+          content: 'Watch free movies online',
+        }
+      ],
     }
   },
   async fetch() {

@@ -12,6 +12,18 @@ export default {
       movies: [],
     }
   },
+  head() {
+    return {
+      title: `${this.$route.params.name}`,
+      meta: [
+        {
+          hid: `${this.$route.params.name}`,
+          name: `${this.$route.params.name}`,
+          content: 'Watch free movies online',
+        }
+      ],
+    }
+  },
   async fetch() {
     this.movies = await movieAPI.searchMoviesByName(
       this.$axios,

@@ -2,10 +2,10 @@
   <div>
     <div class="w-full bg-gray-theme-color px-0 py-[42px]">
       <div class="container flex">
-        <div class="w-1/4 pr-[30px]">
+        <div class="sm:w-1/4 pr-[30px]">
           <img src="../../static/images/logo.png" alt="" class="mt-[-10px]" />
           <p class="py-[20px]">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Sequi iusto
+            Lorem ipsum dolor sit amet consect adipis icing elit. Sequi iusto
             animi debitis porro dolore perspiciatis officia, consequuntur
             numquam ipsa veniam ab voluptatum voluptas deleniti quae mollitia
             saepe accusantium iure cumque.
@@ -17,7 +17,7 @@
             <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
-        <div class="w-1/4 px-[15px]">
+        <div class="hidden sm:block w-1/4 px-[15px]">
           <span class="relative underline-ul font-semibold text-[18px]"
             >Footer Content</span
           >
@@ -30,7 +30,7 @@
             <li>Content</li>
           </ul>
         </div>
-        <div class="w-1/4 px-[15px]">
+        <div class="hidden sm:block w-1/4 px-[15px]">
           <span class="relative underline-ul font-semibold text-[18px]"
             >Footer Content</span
           >
@@ -43,7 +43,7 @@
             <li>Content</li>
           </ul>
         </div>
-        <div class="w-1/4 px-[15px]">
+        <div class="hidden sm:block w-1/4 px-[15px]">
           <span class="relative underline-ul font-semibold text-[18px]"
             >Send To Us</span
           >
@@ -61,10 +61,10 @@
       </div>
     </div>
     <div class="w-full py-[20px]">
-      <div class="container flex">
+      <div class="container flex text-[10px] sm:text-base">
         <div class="w-1/2">
           <span class="text-main-color">Link github: </span>
-          <a href="">https://github.com/duong261100/vue3-pikachu</a>
+          <a href="https://github.com/duong261100/the-movie">https://github.com/duong261100/the-movie</a>
         </div>
         <div class="w-1/2 text-right">
           <p>

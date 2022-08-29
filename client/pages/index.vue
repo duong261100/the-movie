@@ -3,7 +3,7 @@
     <the-slider :movies="nowPlayingMovie" />
     <div class="mt-[50px] mb-[100px] space-y-[100px]">
       <top-rate-movies-section :movies="topRateMovie" />
-      <latest-movies-section :movies="latestMovie" />
+      <latest-movies-section :movies="latestMovie" class="hidden lg:block" />
       <ads-section />
       <upcoming-movies-section :movies="upcomingMovie" />
     </div>
@@ -21,6 +21,18 @@ export default {
       topRateMovie: [],
       latestMovie: [],
       upcomingMovie: [],
+    }
+  },
+  head() {
+    return {
+      title: 'The Movie',
+      meta: [
+        {
+          hid: 'The Movie',
+          name: 'The Movie',
+          content: 'Watch free movies online',
+        }
+      ],
     }
   },
   async fetch() {

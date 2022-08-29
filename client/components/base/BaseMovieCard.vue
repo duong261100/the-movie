@@ -1,5 +1,5 @@
 <template>
-  <div class="relative group overflow-hidden hover:cursor-pointer w-[350px]">
+  <div class="relative group overflow-hidden hover:cursor-pointer w-[90vw] md:w-[250px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px]">
     <nuxt-link :to="{name: 'movies-slug', params: { slug: movie.title, id: movie.id }}">
       <div
         class="

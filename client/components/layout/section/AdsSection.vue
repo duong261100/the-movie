@@ -1,5 +1,5 @@
 <template>
   <div class="w-full">
-    <img src="../../../static/images/ads.jpg" alt="">
+    <img class="m-auto" src="../../../static/images/ads.jpg" alt="">
   </div>
 </template>

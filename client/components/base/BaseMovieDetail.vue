@@ -1,13 +1,13 @@
 <template>
-  <div class="flex">
-    <div class="w-1/3 px-[10px]">
+  <div class="flex flex-col sm:flex-row">
+    <div class="w-full md:w-1/3 px-[10px] py-[20px] sm:py-[0]">
       <img
         :src="`https://image.tmdb.org/t/p/original${movie.poster_path}`"
         alt=""
         class="rounded-[10px]"
       />
     </div>
-    <div class="w-2/3 px-[50px] py-[0px]">
+    <div class="w-full md:w-2/3 px-[50px] py-[0px]">
       <h3 class="text-[22px] font-semibold">
         {{ movie.title }}
       </h3>

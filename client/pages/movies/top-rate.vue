@@ -12,6 +12,18 @@ export default {
       movies: [],
     }
   },
+  head() {
+    return {
+      title: 'Top Rate Movies',
+      meta: [
+        {
+          hid: 'Top Rate Movies',
+          name: 'Top Rate Movies',
+          content: 'Watch free movies online',
+        }
+      ],
+    }
+  },
   async fetch() {
     this.movies = await movieAPI.getTopRateMovie(this.$axios)
   },
